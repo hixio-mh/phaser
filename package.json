@@ -69,7 +69,7 @@
     "jsdoc": "^3.6.4",
     "node-sloc": "^0.1.12",
     "remove-files-webpack-plugin": "^1.4.3",
-    "typescript": "^3.9.6",
+    "typescript": "^3.9.10",
     "uglifyjs-webpack-plugin": "^2.2.0",
     "vivid-cli": "^1.1.2",
     "webpack": "^4.43.0",
