@@ -46,7 +46,9 @@
     "tsgen": "cd scripts/tsgen && jsdoc -c jsdoc-tsd.conf.json",
     "test-ts": "cd scripts/tsgen/test && tsc > output.txt",
     "ts": "npm run tsgen && npm run test-ts",
-    "tsdev": "npm run build-tsgen && npm run tsgen && npm run test-ts"
+    "tsdev": "npm run build-tsgen && npm run tsgen && npm run test-ts",
+    "prepublish": "npm run snyk-protect",
+    "snyk-protect": "snyk-protect"
   },
   "keywords": [
     "2d",
@@ -80,6 +82,8 @@
     "eventemitter3": "^4.0.4",
     "exports-loader": "^1.1.0",
     "imports-loader": "^1.1.0",
-    "path": "^0.12.7"
-  }
+    "path": "^0.12.7",
+    "@snyk/protect": "latest"
+  },
+  "snyk": true
 }
